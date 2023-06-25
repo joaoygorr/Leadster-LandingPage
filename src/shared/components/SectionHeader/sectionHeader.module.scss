@@ -21,6 +21,9 @@
         justify-content: center;
         flex-direction: column;
         font-family: "Plus Jakarta Sans", sans-serif;
+        text-align: center;
+        margin: 0 .8rem;
+
         h3 {
             color: #000000;
             text-transform: capitalize;
@@ -40,16 +43,35 @@
             left: 14rem;
             bottom: 5rem;
         }
+
     }
 
+    
     .boxLine {
         border: 1px solid #c8d4dd;
         width: 40%;
         margin-top: -2rem;
     }
-
+    
     p {
         margin-top: 1rem;
         color: #000000;
+    }
+
+    @media (max-width: 459px) {
+        .boxTitles {
+            img {
+                left: 10rem;
+            }
+        }
+
+        .boxLine {
+            width: 90%;
+        }
+
+        p {
+            margin: 1rem;
+            text-align: center;
+        }
     }
 }

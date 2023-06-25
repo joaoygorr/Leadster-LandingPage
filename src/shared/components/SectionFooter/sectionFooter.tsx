@@ -10,7 +10,7 @@ export const SectionFooter = () => {
         <section className={`${Styles.container} mb-10`}>
             <div className={`grid lg:grid-cols-2 md:grid-cols-1 p-5 mx-auto w-full max-w-screen-xl ${Styles.boxContent}`}>
                 <div className="flex justify-center items-center">
-                    <Image src={Graph} alt="gráfico" />
+                    <Image src={Graph} alt="gráfico" width={0} height={0} priority />
                 </div>
                 <div className={Styles.boxInfos}>
                     <h2 className="font-medium">Pronto para triplicar sua</h2>
@@ -19,10 +19,12 @@ export const SectionFooter = () => {
                     <div className={Styles.boxLine}></div>
                     <div className={Styles.boxView}>
                         <button>VER DEMONSTRAÇÃO</button>
-                        <Image src={Selo} alt="Selo" />
+                        <Image src={Selo} width={0} height={0} alt="Selo" priority />
                     </div>
-                    <div className="flex lg:items-center lg:justify-start md:justify-center md:items-center">
-                        <Image src={Card} alt="no-card" /><strong className="mx-1">Não</strong> é necessário Cartão de Crédito | <Image src={Rating} alt="avaliação" className="mx-2" /> <strong>4.9</strong>/5 de satisfação
+                    <div className={`flex lg:items-center lg:justify-start md:justify-center md:items-center ${Styles.boxRating}`}>
+                        <div className={Styles.boxCard}><Image src={Card} width={0} height={0} alt="no-card" priority /><strong className="mx-1">Não</strong> é necessário Cartão de Crédito</div>
+                        <div className={Styles.boxRatingText}>| <Image src={Rating} width={0} height={0} alt="avaliação" className="mx-2" priority /> <strong>4.9</strong>/5 de satisfação</div>
+
                     </div>
                 </div>
             </div>

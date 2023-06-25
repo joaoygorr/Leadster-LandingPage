@@ -8,7 +8,8 @@ export const SectionHeader = () => {
             <span>webinars exclusivos</span>
             <div className={Styles.boxTitles}>
                 <h3>menos conversinha,</h3>
-                <h2>mais conversão</h2><Image src={Img} alt="Img" />
+                <h2>mais conversão</h2>
+                <Image src={Img} alt="Img" width={0} height={0} priority />
             </div>
             <div className={Styles.boxLine}></div>
             <p>Conheça as estratégias que <strong>mudaram o jogo</strong> e como aplicá-las no seu negócio</p>

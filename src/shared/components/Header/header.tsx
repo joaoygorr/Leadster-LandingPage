@@ -8,7 +8,10 @@ export const Header = () => {
       <Image
         src={LogoLeadster}
         alt="Logo leadster"
-        className={Styles.img}
+        className={` m-8 ${Styles.img}`}
+        width={0}
+        height={0}
+        priority
       />
     </header>
   )
