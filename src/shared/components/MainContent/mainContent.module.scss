@@ -1,0 +1,37 @@
+.boxContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #c8d4dd;
+    padding-bottom: 2rem;
+
+    .boxListButton {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            button {
+                border: 1px solid black;
+                border-radius: 2rem;
+                padding: .5rem;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+
+            button:hover {
+               border-color: #0084ff;
+               color: #0084ff;
+            }
+        }
+    }
+
+    .boxOrder {
+        select {
+            border: 1px solid black;
+            font-weight: 500;
+            padding: .5rem;
+            border-radius: .5rem;
+            margin-left: .5rem;            
+        }
+    }
+}
