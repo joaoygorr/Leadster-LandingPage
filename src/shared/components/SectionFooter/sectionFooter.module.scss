@@ -31,6 +31,15 @@
                     font-weight: 500;
                 }
             }
+
+            .boxRating {
+
+                .boxCard,
+                .boxRatingText {
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
 
         @media (max-width: 1024px) {
@@ -58,7 +67,7 @@
                     margin-top: 1rem;
                 }
 
-                .boxRatingText { 
+                .boxRatingText {
                     display: flex;
                     justify-content: center;
                     align-items: center;
