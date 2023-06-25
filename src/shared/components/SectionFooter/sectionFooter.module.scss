@@ -1,0 +1,35 @@
+.container {
+    background-color: #f0f8ff;
+
+    .boxContent {
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .boxInfos {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .boxLine {
+                border: 1px solid rgb(200, 212, 221);
+                margin: 1rem 0;
+            }
+
+            .boxView {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                button {
+                    background-color: #0083ff;
+                    padding: 1rem;
+                    border-radius: 3rem;
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}
