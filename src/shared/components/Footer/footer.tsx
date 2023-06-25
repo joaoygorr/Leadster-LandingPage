@@ -7,11 +7,11 @@ export const Footer = () => {
     return (
 
         <footer className={Styles.container}>
-            <div className="mx-auto w-full max-w-screen-xl fixed bottom-0">
+            <div className="mx-auto w-full max-w-screen-xl">
                 <div className={Styles.boxImage}>
                     <Image src={Logo} alt="Logo leadster" width={250}
                         height={34} />
-                    <span className="text-sm">Transformando visitantes em clientes.</span>
+                    <span className="text-sm ">Transformando visitantes em clientes.</span>
                 </div>
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
                     <div>
