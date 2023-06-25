@@ -7,6 +7,8 @@
         gap: 2rem;
 
         .boxInfos {
+            text-align: start;
+
             h2 {
                 font-size: 2rem;
             }
@@ -28,6 +30,17 @@
                     color: #FFFFFF;
                     font-weight: 500;
                 }
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .boxInfos {
+                text-align: center;
+            }
+
+            .boxView {
+                align-items: center;
+                justify-content: center;
             }
         }
     }
