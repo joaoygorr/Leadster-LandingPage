@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boxImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        span {
+            color: rgb(108, 177, 160);
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+        letter-spacing: .05rem;
+    }
+
+    .boxIcons {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            background-color: rgb(247, 248, 251);
+            padding: .9rem;
+            border-radius: 5rem;
+
+            svg {
+                color: rgb(131, 142, 171);
+            }
+        }
+    }
+
+    .boxCopy {
+        border-top: 1px solid #f2f4f8;
+
+        span {
+            color: rgb(133, 115, 179);
+
+            a {
+                color: rgb(0, 177, 245);
+            }
+        }
+    }
+}
