@@ -1,4 +1,15 @@
 .boxContainer { 
+    .boxCard {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+
+    .boxCard:hover {
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.452) 0px 7px 29px 0px;
+    }
+
+    
     .line {
         border: 1px solid #c8d4dd;
         margin-top: 3rem;
