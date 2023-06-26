@@ -1,21 +1,32 @@
 import Styles from "./mainContent.module.scss";
 import Data from "@/pages/api/data.json";
 import { Card } from "./card/card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IVideo } from "@/shared/interfaces";
 
 export const MainContent = () => {
     const dataJson = Data.data;
     const [videos, setVideos] = useState<IVideo[]>([]);
+    const [activeIndex, setActiveIndex] = useState<number>(0);
+
+    const handleAnchorClick = (index: number) => {
+        setVideos(dataJson[index].videos);
+        setActiveIndex(index);
+    };
+
+    useEffect(() => {
+        setVideos(dataJson[activeIndex].videos);
+    }, [activeIndex]);
 
     return (
-        <section className="">
-            <nav className={`mx-auto w-full max-w-screen-xl ${Styles.boxContainer}`}>
+        <section className="my-10">
+            <nav className={`mx-auto w-full max-w-screen-xl my-10 ${Styles.boxContainer}`}>
                 <ul className={Styles.boxListButton}>
                     {dataJson.map((index, key) => {
+                        const isActive = activeIndex === key;
                         return (
                             <li key={key}>
-                                <a className="active" onClick={() => setVideos(index.videos)}>{index.label}</a>
+                                <a className={`${isActive ? `${Styles.active}` : ""}`} onClick={() => handleAnchorClick(key)}>{index.label}</a>
                             </li>
                         )
                     })}
@@ -29,6 +40,6 @@ export const MainContent = () => {
                 </div>
             </nav>
             <Card data={videos} />
-        </section>
+        </section >
     )
 }
