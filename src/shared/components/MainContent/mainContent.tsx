@@ -20,7 +20,7 @@ export const MainContent = () => {
 
     return (
         <section className="my-10">
-            <nav className={`mx-auto w-full max-w-screen-xl my-10 ${Styles.boxContainer}`}>
+            <nav className={`mx-auto w-full max-w-screen-xl my-10 px-5 ${Styles.boxContainer}`}>
                 <ul className={Styles.boxListButton}>
                     {dataJson.map((index, key) => {
                         const isActive = activeIndex === key;

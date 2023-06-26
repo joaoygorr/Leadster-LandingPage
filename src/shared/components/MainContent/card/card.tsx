@@ -6,7 +6,7 @@ import { IVideo } from "@/shared/interfaces";
 export const Card = ({ data }: { data: IVideo[] }) => {
     return (
         <div className={`flex justify-center items-center flex-col mx-auto w-full max-w-screen-xl ${Styles.boxContainer}`}>
-            <div className={`grid grid-cols-3 gap-4`}>
+            <div className={`grid lg:grid-cols-3 md:grid-cols-2 gap-4`}>
                 {data.map((index, key) => (
                     <div key={key}>
                         <Image src={Thumbnail} alt="Thumbnail" width={0} height={0} priority />
