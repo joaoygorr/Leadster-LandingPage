@@ -27,19 +27,19 @@ export const Card = ({ data }: { data: IVideo[] }) => {
                 </div>
                 <div className={Styles.line}></div>
 
-                <nav aria-label="Page navigation example" className="my-10">
+                <nav aria-label="Page navigation example" className="my-5">
                     <ul className="inline-flex -space-x-px">
                         <li>
-                            <a href="#" className="px-3 py-2 ml-0 leading-tight text-black">Página</a>
+                            <p className="px-3 cursor-pointer py-2 ml-0 leading-tight text-black">Página</p>
                         </li>
                         <li>
-                            <a href="#" className="px-3 py-2 ml-0 leading-tight text-black  border border-gray-300 rounded">1</a>
+                            <p className="px-3 cursor-pointer py-2 ml-0 leading-tight text-black  border border-gray-300 rounded">1</p>
                         </li>
                         <li>
-                            <a href="#" className="px-3 py-2 ml-0 leading-tight text-black">2</a>
+                            <p className="px-3 cursor-pointer py-2 ml-0 leading-tight text-black">2</p>
                         </li>
                         <li>
-                            <a href="#" aria-current="page" className="px-3 py-2 ml-0 leading-tight text-black ">3</a>
+                            <p className="px-3 cursor-pointer py-2 ml-0 leading-tight text-black ">3</p>
                         </li>
                     </ul>
                 </nav>
