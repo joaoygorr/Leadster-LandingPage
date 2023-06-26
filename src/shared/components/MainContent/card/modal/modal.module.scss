@@ -5,6 +5,12 @@
     margin-right: 1rem;
 }
 
+@media (max-width: 390px) {
+    .frame {
+        width: 358px;
+    }
+}
+
 .spreadsheet {
     background-color: rgb(194, 244, 234);
 }

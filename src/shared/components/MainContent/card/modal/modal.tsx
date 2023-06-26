@@ -24,7 +24,7 @@ export const Modal = ({ data }: { data: IVideo | undefined }) => {
                         </button>
                     </div>
                     <div>
-                        <iframe src={data?.link} width={577} height={300}></iframe>
+                        <iframe src={data?.link} className={Styles.frame} width={577} height={300}></iframe>
                     </div>
 
                     <div>
