@@ -23,7 +23,7 @@ $ npm install or yarn install
 # Run the application in development mode
 $ npm run dev or yarn dev
 
-# The application will open on the port: 5173 - go to http://localhost:3000
+# The application will open on the port: go to http://localhost:3000
 
 ```
 ## Contributors
