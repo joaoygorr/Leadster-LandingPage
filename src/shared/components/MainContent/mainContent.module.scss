@@ -19,8 +19,15 @@
             }
 
             a:hover {
-               border-color: #0084ff;
-               color: #0084ff;
+                border-color: #0084ff;
+                color: #0084ff;
+                cursor: pointer;
+            }
+
+            a.active {
+                background-color: #0084ff;
+                color: #FFFFFF;
+                border-color: #0084ff;
             }
         }
     }
@@ -31,7 +38,11 @@
             font-weight: 500;
             padding: .5rem;
             border-radius: .5rem;
-            margin-left: .5rem;            
+            margin-left: .5rem;
+        }
+
+        p.macaco {
+            color: yellow;
         }
     }
 }
