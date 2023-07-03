@@ -13,6 +13,12 @@
         padding: .5rem;
         text-transform: uppercase;
         font-weight: 700;
+        transition: .2s ease-in-out ;
+
+        &:hover {
+            background-color: #007eff;
+            color: #f0f8ff;
+        }
     }
 
     .boxTitles {
@@ -46,13 +52,13 @@
 
     }
 
-    
+
     .boxLine {
         border: 1px solid #c8d4dd;
         width: 40%;
         margin-top: -2rem;
     }
-    
+
     p {
         margin-top: 1rem;
         color: #000000;
