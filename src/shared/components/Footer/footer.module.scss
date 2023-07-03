@@ -37,20 +37,27 @@
         gap: 1rem;
 
         li {
-            background-color: rgb(247, 248, 251);
-            padding: .9rem;
-            border-radius: 5rem;
+            display: inline-flex;
 
-            svg {
-                color: rgb(131, 142, 171);
+            a {
+                background-color: rgb(247, 248, 251);
+                padding: .9rem;
+                border-radius: 5rem;
+
+                svg {
+                    color: rgb(131, 142, 171);
+                }
             }
+
         }
 
         li:hover {
-            background-color: rgb(0, 177, 245);
-            cursor: pointer;
-            svg {
-                color: #ffffff;
+            a {
+                background-color: rgb(0, 177, 245);
+
+                svg {
+                    color: #ffffff;
+                }
             }
         }
     }

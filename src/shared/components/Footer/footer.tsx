@@ -8,7 +8,7 @@ export const Footer = () => {
         <footer className={Styles.container}>
             <div className="mx-auto w-full max-w-screen-xl">
                 <div className={Styles.boxImage}>
-                    <Image src={Logo} alt="Logo leadster" width={250} height={34} priority/>
+                    <Image src={Logo} alt="Logo leadster" width={250} height={34} priority />
                     <span className="text-sm ">Transformando visitantes em clientes.</span>
                 </div>
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
@@ -67,15 +67,15 @@ export const Footer = () => {
                         <h2 className="mb-6">Siga a Leadster</h2>
                         <ul className={Styles.boxIcons}>
                             <li>
-                                <FaLinkedinIn />
+                                <a href="https://www.linkedin.com/company/getleadster/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
                             </li>
 
                             <li>
-                                <FaFacebookF />
+                                <a href="https://www.facebook.com/leadsterplatform" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                             </li>
 
                             <li>
-                                <FaInstagram />
+                                <a href="https://www.instagram.com/leadster.com.br/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                             </li>
                         </ul>
                         <p className="mt-1"><strong>E-mail:</strong> contato@leadster.com.br</p>
