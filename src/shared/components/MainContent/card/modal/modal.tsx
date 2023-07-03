@@ -23,8 +23,8 @@ export const Modal = ({ data }: { data: IVideo | undefined }) => {
                             <span className="sr-only">Close modal</span>
                         </button>
                     </div>
-                    <div>
-                        <iframe src={data?.link} className={Styles.frame} width={577} height={300}></iframe>
+                    <div className={Styles.boxIframe}>
+                        <iframe src={data?.link} className={Styles.frame}></iframe>
                     </div>
 
                     <div>
@@ -38,7 +38,7 @@ export const Modal = ({ data }: { data: IVideo | undefined }) => {
                     <div>
                         <h3 className="p-2 font-medium">Downloads</h3>
                     </div>
-                    <div className="flex items-center p-6 space-x-2 border-t border-x-gray-500 rounded-b">
+                    <div className={`space-x-2 border-x-gray-500 rounded-b ${Styles.boxDownloads}`}>
                         <button type="button" className={`${Styles.spreadsheet} font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2`}>
                             <BsCloudArrowDown className="w-4 h-4 mr-2 -ml-1" />
                             Spreadsheet.xls

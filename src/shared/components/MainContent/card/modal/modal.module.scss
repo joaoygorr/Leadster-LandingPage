@@ -7,18 +7,38 @@
 
 @media (max-width: 390px) {
     .frame {
-        width: 358px;
+        width: 100%;
     }
 }
 
-.spreadsheet {
-    background-color: rgb(194, 244, 234);
+.boxIframe {
+    iframe {
+        height: 18.75rem;
+        width: 100%;
+    }
 }
 
-.document {
-    background-color: rgb(194, 230, 255);
-}
+.boxDownloads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-top-width: 1px;
 
-.presentation {
-    background-color: rgb(255, 248, 208);
+    @media (max-width: 580px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spreadsheet {
+        background-color: rgb(194, 244, 234);
+    }
+
+    .document {
+        background-color: rgb(194, 230, 255);
+    }
+
+    .presentation {
+        background-color: rgb(255, 248, 208);
+    }
 }
