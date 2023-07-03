@@ -21,7 +21,7 @@ export const SectionFooter = () => {
                         <button>VER DEMONSTRAÇÃO</button>
                         <Image src={Selo} width={0} height={0} alt="Selo" priority />
                     </div>
-                    <div className={`flex lg:items-center lg:justify-start md:justify-center md:items-center ${Styles.boxRating}`}>
+                    <div className={`flex lg:items-center lg:justify-start md:justify-center md:items-center justify-center items-center ${Styles.boxRating}`}>
                         <div className={Styles.boxCard}><Image src={Card} width={0} height={0} alt="no-card" priority /><strong className="mx-1">Não</strong> é necessário Cartão de Crédito</div>
                         <div className={Styles.boxRatingText}>| <Image src={Rating} width={0} height={0} alt="avaliação" className="mx-2" priority /> <strong>4.9</strong>/5 de satisfação</div>
 
